@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Fadli Script",
+		uint64 ResourceId = 5638481383dfa1eb,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "CookieSelected",
+		uint64 ResourceId = 5639badf0d4d7eb7,
+	},
+},

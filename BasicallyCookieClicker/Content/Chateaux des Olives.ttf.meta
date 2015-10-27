@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Chateaux des Olives",
+		uint64 ResourceId = 563849d1380df919,
+	},
+},

@@ -1,0 +1,7 @@
+ContentLibrary = 
+{
+	string Name = "BasicallyCookieClicker",
+	uint64 LibraryId = 5639ba9e034f0ee1,
+	string SourceControlType = "",
+	bool ReadOnly = false,
+},

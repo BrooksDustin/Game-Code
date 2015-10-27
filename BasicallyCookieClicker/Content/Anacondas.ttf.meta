@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Anacondas",
+		uint64 ResourceId = 563848508dd99478,
+	},
+},

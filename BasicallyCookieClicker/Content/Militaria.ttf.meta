@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Militaria",
+		uint64 ResourceId = 56384d840fb9db90,
+	},
+},

@@ -1,0 +1,29 @@
+class BasicClicker1CPS : ZilchComponent
+{
+    var LeftClickCount : Integer = 0;
+    
+    function Initialize(init : CogInitializer)
+    {
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+    
+    function UpdateMouseClickCount()
+    {
+    // Update the text for the MouseClickCountText
+    var mouseClickCounts = new StringBuilder();
+    mouseClickCounts.WriteLine("Cookies: `this.LeftClickCount`");
+    mouseClickCounts.WriteLine;
+    mouseClickCounts.WriteLine("Cookies Per Second:");
+    // Turn this stringbuilder into a string that our SpriteText can display:
+    this.Owner.SpriteText.Text = mouseClickCounts.ToString();
+    }
+    
+    function OnLeftMouseDown(event : ViewportMouseEvent)
+    {
+         this.LeftClickCount += 1;
+    }
+}

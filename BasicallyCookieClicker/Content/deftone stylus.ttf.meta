@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "deftone stylus",
+		uint64 ResourceId = 563849205025977b,
+	},
+},

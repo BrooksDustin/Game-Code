@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "BasicClicker1CPS",
+		uint64 ResourceId = 5639b6c4a7772f50,
+	},
+},

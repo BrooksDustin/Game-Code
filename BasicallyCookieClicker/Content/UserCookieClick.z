@@ -1,0 +1,42 @@
+class UserCookieClick : ZilchComponent
+{
+    // Creating variables that will persist for the life of the object requires it
+    // to be define in the class scope. This allows the variables to live between
+    // calls to different functions. These variables are accessible via this.
+      // We haven't clicked anything yet, so initialize them to 0:
+    var LeftClickCount       : Integer = 0;
+    
+    function Initialize(init : CogInitializer)
+    {
+        // We want to update the MouseClickCountText every game loop:
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+
+        // Sign up for mouse events called on our Camera's Viewport:
+          // Get a reference to the camera
+        var gameCamera = this.Space.FindObjectByName("Camera");
+          // Sign up for events
+        Zero.Connect(gameCamera, Events.LeftMouseDown, this.OnLeftMouseDown);
+    }
+    
+    function UpdateMouseClickCount()
+    {
+    // Update the text for the MouseClickCountText
+    var mouseClickCounts = new StringBuilder();
+    mouseClickCounts.WriteLine("Cookies: `this.LeftClickCount`");
+    mouseClickCounts.WriteLine;
+    mouseClickCounts.WriteLine("Cookies Per Second: 0");
+
+    // Turn this stringbuilder into a string that our SpriteText can display:
+    this.Owner.SpriteText.Text = mouseClickCounts.ToString();
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.UpdateMouseClickCount();
+    }
+
+    function OnLeftMouseDown(event : ViewportMouseEvent)
+    {
+         this.LeftClickCount += 1;
+    }
+}

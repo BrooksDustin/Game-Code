@@ -1,0 +1,2739 @@
+Level = 
+{
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			CogPath Renderer = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 1,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			CogPath Camera = 
+			{
+				string Path = ":/Camera",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 2,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.155, 0.155, 0.155, 1],
+			bool DrawNonVisible = false,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool EditorIconDepth = true,
+			bool Wireframe = false,
+		},
+		GridDraw = 
+		{
+			bool Active = true,
+			bool HalfCellOffset = false,
+			float CellSize = 1,
+			GridAxis Axis = ZAxis,
+			int Lines = 100,
+			bool DrawAxisOrigins = true,
+			bool AlwaysDrawInEditor = true,
+			bool DrawInGame = false,
+			Vec4 GridColor = [0.5, 0.5, 0.5, 0.4],
+			Vec4 GridHiLight = [0, 0, 0, 0.4],
+			int HilightInterval = 10,
+			bool FollowEditorCamera = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [13.93, 1.45262, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			CameraTransparentSort TransparentSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 24.6597,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [13.93, 1.45262, 6.089e-007],
+			float MoveSensitivity = 1,
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.155, 0.155, 0.155, 1],
+			bool DrawNonVisible = true,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool Wireframe = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			CameraTransparentSort TransparentSort = InheritFromSpace,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+		SoundListener = 
+		{
+			bool Active = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Title",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.96692, 10.31, 0],
+			Vec3 Scale = [3.84244, 4.56807, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = false,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "5638481383dfa1eb:Fadli Script",
+			uint FontSize = 30,
+			string Text = "Cookie Clicker",
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "Cookie JPG",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 1.31324, 0],
+			Vec3 Scale = [1.56809, 1.51736, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5639b7c46e4674bd:CookieJpg edited",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		CookieSelected = 
+		{
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = true,
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 6,
+				},
+				Named = 
+				{
+					string Name = "CookieCounter",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-4.12471, -2.78655, 0],
+					Vec3 Scale = [1.80272, 2.38746, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SpriteText = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string FontName = "563849205025977b:deftone stylus",
+					uint FontSize = 30,
+					string Text = "Cookies: 0",
+					TextAlign Align = Left,
+					float PixelsPerUnit = 64,
+					bool Smoothing = true,
+				},
+				UserCookieClick = 
+				{
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 7,
+				},
+				Named = 
+				{
+					string Name = "Clicker",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [7.55355, 5.05907, 3.95199e-009],
+					Vec3 Scale = [1, 1.43538, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 8,
+						},
+						Named = 
+						{
+							string Name = "ClickerPrice",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.963796, -0.103516, -2.22045e-016],
+							Vec3 Scale = [1.65545, 0.558995, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "563848508dd99478:Anacondas",
+							uint FontSize = 30,
+							string Text = "15 Cookies",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 9,
+						},
+						Named = 
+						{
+							string Name = "ClickerName",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.37646, 0.392948, -2.22045e-016],
+							Vec3 Scale = [0.838492, 0.9, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "5638481383dfa1eb:Fadli Script",
+							uint FontSize = 30,
+							string Text = "Clicker (0.1 CPS)",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 10,
+						},
+						Named = 
+						{
+							string Name = "Clicker Information",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [3.97466, -4.76837e-007, 0],
+							Vec3 Scale = [1.60678, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 11,
+								},
+								Named = 
+								{
+									string Name = "ClickerName",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.43564, 0.512783, -1.11022e-016],
+									Vec3 Scale = [0.843668, 0.9, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "You pay a local nerd",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 12,
+								},
+								Named = 
+								{
+									string Name = "ClickerPrice",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.17788, 0.0642532, -1.11022e-016],
+									Vec3 Scale = [0.971305, 0.844509, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "to click for hours",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 13,
+						},
+						Named = 
+						{
+							string Name = "Sell One (Clicker)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, -0.259166, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 14,
+						},
+						Named = 
+						{
+							string Name = "Buy One (Clicker)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, 0.278164, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 15,
+				},
+				Named = 
+				{
+					string Name = "Grandma",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [7.55355, 3.7378, 3.95199e-009],
+					Vec3 Scale = [1, 1.43538, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 16,
+						},
+						Named = 
+						{
+							string Name = "ClickerName",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.3811, 0.392948, -1.11022e-016],
+							Vec3 Scale = [0.75754, 0.9, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "5638481383dfa1eb:Fadli Script",
+							uint FontSize = 30,
+							string Text = "Grandma (0.5 CPS)",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 17,
+						},
+						Named = 
+						{
+							string Name = "ClickerPrice",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.807598, -0.103516, -1.11022e-016],
+							Vec3 Scale = [1.24444, 0.558995, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "563848508dd99478:Anacondas",
+							uint FontSize = 30,
+							string Text = "100 Cookies",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 18,
+						},
+						Named = 
+						{
+							string Name = "Grandmother Information",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [4.42983, 0.0189161, 0],
+							Vec3 Scale = [1.94102, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 19,
+								},
+								Named = 
+								{
+									string Name = "ClickerName",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.35249, 0.512783, -1.11022e-016],
+									Vec3 Scale = [0.830929, 0.9, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "....You higher your",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 20,
+								},
+								Named = 
+								{
+									string Name = "ClickerPrice",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.24233, 0.0642532, -1.11022e-016],
+									Vec3 Scale = [0.659941, 0.844509, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "Grandma?.. (Why?..)",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 21,
+						},
+						Named = 
+						{
+							string Name = "Buy One (Grandma)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, 0.26889, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 22,
+						},
+						Named = 
+						{
+							string Name = "Sell One (Grandma)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, -0.267455, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 23,
+				},
+				Named = 
+				{
+					string Name = "Farm",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [7.55355, 2.41653, 3.95199e-009],
+					Vec3 Scale = [1, 1.43538, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 24,
+						},
+						Named = 
+						{
+							string Name = "ClickerName",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.988327, 0.392948, -1.11022e-016],
+							Vec3 Scale = [0.754282, 0.9, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "5638481383dfa1eb:Fadli Script",
+							uint FontSize = 30,
+							string Text = "Farm (4 CPS)",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 25,
+						},
+						Named = 
+						{
+							string Name = "ClickerPrice",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.641113, -0.0635709, -1.11022e-016],
+							Vec3 Scale = [0.726734, 0.602857, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "563848508dd99478:Anacondas",
+							uint FontSize = 30,
+							string Text = "500 Cookies",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 26,
+						},
+						Named = 
+						{
+							string Name = "Farm Information",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [5.58321, 0.0335605, 0],
+							Vec3 Scale = [2.74921, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 27,
+								},
+								Named = 
+								{
+									string Name = "ClickerName",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.418, 0.512783, -2.22045e-016],
+									Vec3 Scale = [0.542544, 0.9, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "..You plant a cookie in the ground",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 28,
+								},
+								Named = 
+								{
+									string Name = "ClickerPrice",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.37836, 0.0642533, -2.22045e-016],
+									Vec3 Scale = [0.465937, 0.844509, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "Your neighbor wonders if you are okay.",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 29,
+						},
+						Named = 
+						{
+							string Name = "Buy One (Farm)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, 0.26714, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 30,
+						},
+						Named = 
+						{
+							string Name = "Sell One (Farm)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, -0.26921, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 31,
+				},
+				Named = 
+				{
+					string Name = "Factory",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [7.55355, 1.11699, 3.95199e-009],
+					Vec3 Scale = [1, 1.43538, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 32,
+						},
+						Named = 
+						{
+							string Name = "ClickerName",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.15279, 0.392948, -1.11022e-016],
+							Vec3 Scale = [0.758233, 0.9, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "5638481383dfa1eb:Fadli Script",
+							uint FontSize = 30,
+							string Text = "Factory (10 CPS)",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 33,
+						},
+						Named = 
+						{
+							string Name = "ClickerPrice",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.693828, -0.055582, -1.11022e-016],
+							Vec3 Scale = [0.707026, 0.622323, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "563848508dd99478:Anacondas",
+							uint FontSize = 30,
+							string Text = "3000 Cookies",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 34,
+						},
+						Named = 
+						{
+							string Name = "Factory Information",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [5.58325, -0.0449057, 0],
+							Vec3 Scale = [2.74921, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 35,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 1",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.1839, 0.512783, -2.22045e-016],
+									Vec3 Scale = [0.422336, 0.9, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "You've taken the logical route, and",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 36,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 2",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.44553, 0.0642533, -2.22045e-016],
+									Vec3 Scale = [0.465937, 0.844509, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "created a factory to produce your cookies.",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 37,
+						},
+						Named = 
+						{
+							string Name = "Buy One (Factory)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, 0.237159, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 38,
+						},
+						Named = 
+						{
+							string Name = "Sell One (Factory)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, -0.259942, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 39,
+				},
+				Named = 
+				{
+					string Name = "Mine",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [7.55355, -0.152363, 3.95199e-009],
+					Vec3 Scale = [1, 1.43538, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 40,
+						},
+						Named = 
+						{
+							string Name = "ClickerName",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.27838, 0.392948, -1.11022e-016],
+							Vec3 Scale = [0.8396, 0.9, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "5638481383dfa1eb:Fadli Script",
+							uint FontSize = 30,
+							string Text = "Mine (40 CPS)",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 41,
+						},
+						Named = 
+						{
+							string Name = "ClickerPrice",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.623227, -0.103516, -1.11022e-016],
+							Vec3 Scale = [0.707026, 0.622323, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "563848508dd99478:Anacondas",
+							uint FontSize = 30,
+							string Text = "10,000 Cookies",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 42,
+						},
+						Named = 
+						{
+							string Name = "Mine Information",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [5.58325, -0.0393627, 0],
+							Vec3 Scale = [2.74921, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 43,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 1",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.418, 0.512783, -2.22045e-016],
+									Vec3 Scale = [0.422336, 0.9, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "You find a vein of cookies in the mine, though",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 44,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 2",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-0.89661, 0.0642533, -2.22045e-016],
+									Vec3 Scale = [0.465937, 0.844509, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "they taste very metallic",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 45,
+						},
+						Named = 
+						{
+							string Name = "Buy One (Mine)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, 0.258106, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 46,
+						},
+						Named = 
+						{
+							string Name = "Sell One (Mine)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, -0.252078, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 47,
+				},
+				Named = 
+				{
+					string Name = "Shipment",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [7.55355, -1.55289, 3.95199e-009],
+					Vec3 Scale = [1, 1.43538, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 48,
+						},
+						Named = 
+						{
+							string Name = "ClickerName",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.23046, 0.392948, -1.11022e-016],
+							Vec3 Scale = [0.66892, 0.9, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "5638481383dfa1eb:Fadli Script",
+							uint FontSize = 30,
+							string Text = "Shipment (100 CPS)",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 49,
+						},
+						Named = 
+						{
+							string Name = "ClickerPrice",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.682731, -0.103516, -1.11022e-016],
+							Vec3 Scale = [0.707026, 0.622323, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "563848508dd99478:Anacondas",
+							uint FontSize = 30,
+							string Text = "40,000 Cookies",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 50,
+						},
+						Named = 
+						{
+							string Name = "Shipment Information",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [5.58325, -0.0223214, 0],
+							Vec3 Scale = [2.74921, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 51,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 1",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.32517, 0.512783, -2.22045e-016],
+									Vec3 Scale = [0.422336, 0.9, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "You order a swimming pool full of cookies",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 52,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 2",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-0.885653, 0.0642533, -2.22045e-016],
+									Vec3 Scale = [0.465937, 0.844509, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "(No one knows why..)",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 53,
+						},
+						Named = 
+						{
+							string Name = "Buy One (Shipment)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, 0.298487, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 54,
+						},
+						Named = 
+						{
+							string Name = "Sell One (Shipment)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, -0.264025, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 55,
+				},
+				Named = 
+				{
+					string Name = "Alchemical Lab",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [7.55355, -2.89566, 3.95199e-009],
+					Vec3 Scale = [1, 1.43538, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 56,
+						},
+						Named = 
+						{
+							string Name = "ClickerName",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.23046, 0.392948, -1.11022e-016],
+							Vec3 Scale = [0.504722, 0.9, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "5638481383dfa1eb:Fadli Script",
+							uint FontSize = 30,
+							string Text = "Alchemical Lab (400 CPS)",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 57,
+						},
+						Named = 
+						{
+							string Name = "ClickerPrice",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-0.749309, -0.103516, -1.11022e-016],
+							Vec3 Scale = [0.707026, 0.622323, 0.416371],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						SpriteText = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [1, 1, 1, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string FontName = "563848508dd99478:Anacondas",
+							uint FontSize = 30,
+							string Text = "200,000 Cookies",
+							TextAlign Align = Left,
+							float PixelsPerUnit = 64,
+							bool Smoothing = true,
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 58,
+						},
+						Named = 
+						{
+							string Name = "Alchemical Information",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [8.05337, 0.0322412, 0],
+							Vec3 Scale = [4.41704, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 59,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 1",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.27944, 0.512783, -2.22045e-016],
+									Vec3 Scale = [0.262866, 0.9, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "..You dable in the dark arts, and turn",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+							Cog = 
+							{
+								LinkId = 
+								{
+									uint Id = 60,
+								},
+								Named = 
+								{
+									string Name = "Information Blurb 2",
+								},
+								Transform = 
+								{
+									Vec3 Translation = [-1.41264, 0.0642533, -2.22045e-016],
+									Vec3 Scale = [0.290004, 0.844509, 0.416371],
+									Quat Rotation = [0, 0, 0, 1],
+								},
+								SpriteText = 
+								{
+									bool Visible = true,
+									bool VisibilityCulling = true,
+									bool VisibilityEvents = true,
+									bool CastShadows = false,
+									Vec4 Color = [1, 1, 1, 1],
+									BlendMode BlendMode = Alpha,
+									SpriteGeometryMode GeometryMode = ZPlane,
+									string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+									string FontName = "5638481383dfa1eb:Fadli Script",
+									uint FontSize = 30,
+									string Text = "neighborhood pets into cookies. ..(You monster.. Oo. A cookie!)",
+									TextAlign Align = Left,
+									float PixelsPerUnit = 64,
+									bool Smoothing = true,
+								},
+							},
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 61,
+						},
+						Named = 
+						{
+							string Name = "Buy One (Alchemical Lab)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, 0.272465, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 62,
+						},
+						Named = 
+						{
+							string Name = "Sell One (Alchemical Lab)",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [-1.71804, -0.25734, 0],
+							Vec3 Scale = [0.166818, 0.407884, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Sprite = 
+						{
+							bool Visible = true,
+							bool VisibilityCulling = true,
+							bool VisibilityEvents = true,
+							bool CastShadows = false,
+							Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+							BlendMode BlendMode = Alpha,
+							SpriteGeometryMode GeometryMode = ZPlane,
+							string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+							string SpriteSource = "5275aa4d802dd6dc:Square",
+							bool RenderMask = false,
+							bool FlipX = false,
+							bool FlipY = false,
+							bool AnimationActive = true,
+							float AnimationSpeed = 1,
+							uint StartFrame = 0,
+						},
+						Reactive = 
+						{
+							bool Active = true,
+							bool CaptureMouse = false,
+						},
+						CookieSelected = 
+						{
+						},
+						Area = 
+						{
+							Vec2 Size = [2.9531, 0.961881],
+							Location Origin = Center,
+						},
+						Hierarchy = 
+						{
+						},
+					},
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 63,
+				},
+				Named = 
+				{
+					string Name = "Settings Tab",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [5.40511, -7.16546, 3.95199e-009],
+					Vec3 Scale = [0.27264, 0.711567, 2.4017],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [0.317647, 0.317647, 0.317647, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				CookieSelected = 
+				{
+				},
+				Area = 
+				{
+					Vec2 Size = [2.9531, 0.961881],
+					Location Origin = Center,
+				},
+				Hierarchy = 
+				{
+				},
+			},
+		},
+	},
+},

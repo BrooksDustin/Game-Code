@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "HACKED",
+		uint64 ResourceId = 56384eeaefccadd3,
+	},
+},
