@@ -9,7 +9,7 @@ class CookieSelected : ZilchComponent
         Zero.Connect(this.Owner, Events.MouseEnter, this.OnMouseEnter);
         Zero.Connect(this.Owner, Events.MouseExit, this.OnMouseExit);
         Zero.Connect(this.Owner, Events.LeftMouseDown, this.OnLeftMouseDown);
-        Zero.Connect(this.Owner, Events.MouseUp, this.OnMouseUp);
+        Zero.Connect(this.Owner, Events.MouseUp, this.OnLeftMouseUp);
         // reduce the alpha
         this.Owner.Sprite.Color = this.Owner.Sprite.Color +
         Real4(0.0, 0.0, 0.0, 0.25 - this.Owner.Sprite.Color.W);
@@ -32,15 +32,14 @@ class CookieSelected : ZilchComponent
         this.UpdateMouseClickCount();
     }
     
-    function OnMouseUp(event : ViewportMouseEvent)
+    function OnLeftMouseUp(event : ViewportMouseEvent)
     {
     //Update the cookie counter
+    this.LeftClickCount += 1;
     }
 
     function OnLeftMouseDown(event : ViewportMouseEvent)
     {
-        this.LeftClickCount += 1;
-    // Become brightest to show clicking
     this.Owner.Sprite.Color = this.Owner.Sprite.Color +
     Real4(0.0, 0.0, 0.0, 1.0 - this.Owner.Sprite.Color.W);
     }
